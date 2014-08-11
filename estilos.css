@@ -22,7 +22,18 @@ body
 	font-size: 16px;
 	margin: 0;
 }
-
+footer
+{
+	background: #434343;
+	color: #7A7A7A;
+	padding: 1em 0;
+	text-align: center;
+	width:100;
+}
+footer p
+{
+	margin: 0;
+}
 header
 {
 	background: #434343;
