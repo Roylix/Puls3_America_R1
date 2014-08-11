@@ -102,7 +102,11 @@ nav #publicar_nav a
 {
 	background: white;
 	border-bottom: 3px #22BCE0 solid;
+	margin-bottom: 3em;
+	min-height: 128px; /*Hace que la rayita azul no se colapse*/
+	position: relative;
 }
+
 #contenido .item p{
 	color: #7A7A7A;
 	font-size: 0.9em;
@@ -136,4 +140,17 @@ nav #publicar_nav a
 	color: #444;
 	text-decoration: none;
 }
+
+#contenido .item .votacion{
+	background: white;
+	border-radius: 0 0 0.5em 0.5em;
+	/*border: 2px solid red;*/
+	margin: 3px 0 0 0;
+	padding: 0.5em 0;
+	position: absolute;
+	text-align: center;
+	top: 100%; 
+	width: 96px;
+}
+
 
