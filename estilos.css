@@ -1,3 +1,14 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot?k9kyps');
+	src:url('fonts/icomoon.eot?#iefixk9kyps') format('embedded-opentype'),
+		url('fonts/icomoon.woff?k9kyps') format('woff'),
+		url('fonts/icomoon.ttf?k9kyps') format('truetype'),
+		url('fonts/icomoon.svg?k9kyps#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 a{
 	color: #DD4f24;
 }
@@ -39,8 +50,16 @@ header #avatar figcaption{
 	background: #22BCE0;
 	float: right;
 	height: 50px;
-	padding: 0 2px;
+	/*padding: 0 2px;*/
+	line-height: 50px;
 }
+header #avatar figcaption:after{
+	content: "\e601";
+	font-family: "icomoon";
+	font-size: 0.7em;
+	/*opacity: 0.8;*/
+}
+
 header #avatar img
 {
 	float: left;
@@ -79,17 +98,36 @@ nav ul li a{
 }
 nav #flechita_nav a{
 	background: #22BCE0;
-	padding: 0.5em 0.5em;
+	padding: 0.5em 0em;
 	text-decoration: none;
 }
+
+nav #flechita_nav a:after{
+	content: "\e600";
+	font-family: "icomoon";
+}
+
 nav #publicar_nav{
+	background: #DD4f24;
 	float: right;
 	margin-right: 0;
+	padding-right: 0.8em;
+	position: relative;
+}
+
+nav #publicar_nav:after{
+	color: rgba(255,255,255,0.5);
+	content: "\e606";
+	font-family: "icomoon";
+	font-size: 1.8em;
+	position: absolute;
+	right: 0;
+	top: 3px;
 }
 
 nav #publicar_nav a
 {
-	background: #DD4f24;
+	display: inline-block;
 	padding: 0.5em 1em;
 	text-decoration: none;
 }
@@ -111,11 +149,33 @@ nav #publicar_nav a
 	color: #7A7A7A;
 	font-size: 0.9em;
 }
+#contenido .item .datos_item{
+	text-align: right;
+
+}
+#contenido .item .datos_item .comentarios_item{
+	 background: #878787;
+	 border-radius: 4px;
+	 color: white;
+	 padding: 4px;
+	 text-decoration: none;
+}
+#contenido .item .datos_item .guardar_item{
+	text-decoration: none;
+	margin: 0 1em 0 1em;
+}
+
+#contenido .item .datos_item .guardar_item:after{
+	color:#FD5;
+	content: "\e607";
+	font-family: "icomoon";
+}
 
 #contenido .item .datos_item .tag_item{
 	background: #22BCE0;
 	border-radius: 0.5em;
 	color: white;
+	float: left;
 	padding: 0.2em 0.5em;
 	text-decoration: none;
 }
@@ -153,4 +213,22 @@ nav #publicar_nav a
 	width: 96px;
 }
 
+#contenido .item .votacion a{
+	text-decoration: none;
+}
+#contenido .item .votacion .up:after,
+#contenido .item .votacion .down:after{
+	font-family: "icomoon";
+	font-size: 1.5em;
+	vertical-align: bottom;
+}
 
+#contenido .item .votacion .up:after{
+	color: red;
+	content: "\e602";
+}
+
+#contenido .item .votacion .down:after{
+	color: green;
+	content: "\e601";
+}
